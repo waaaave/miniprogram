@@ -1,0 +1,8 @@
+<import src="../templates/header.wxml" />
+<view class="container vertical centered" >
+  <template is="header" data="{{ ...header }}"></template>
+
+</view>
+<view class="image">
+   <image src="/assets/images/landscape.png"></image>
+</view>

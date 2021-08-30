@@ -1,0 +1,23 @@
+App({ 
+  onLaunch(options){
+    console.log('start')
+    console.log(options)
+  },
+  onShow(options){
+    console.log('show')
+    console.log(options)
+  },
+  onHide(){
+    console.log('hidden')
+  },
+  onError(){
+    console.log(error)
+  },
+  globalData: {
+    greeting:[
+      'hello~',
+      'hola',
+      'nihao'
+  ]
+  }
+})

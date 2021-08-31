@@ -5,7 +5,63 @@ Page({
    * 页面的初始数据
    */
   data: {
-    header:{
+    items:[
+      '中国',
+      '老鹰',
+      '泡菜'
+    ],
+    picka:['江西省','南昌市','东湖区']
+    // pickd:'2000-01-01',
+    // pick:'09:00:00'
+/**
+    nodes:[
+      {
+        name:'img',
+        attrs:{
+          class:'image',
+          src:'../../assets/images/muntain.jpg'
+        }
+    },
+    {
+      name:'h3',
+      attrs:{
+        class:'header'
+      },
+      children:[{
+        type:'text',
+        text:'hello!'
+      }]
+    }
+  ]
+ */
+    /**
+    images:[
+      '../../assets/images/landscape.png',
+      '../../assets/images/muntain.jpg',
+      '../../assets/images/ruins.jpg'
+    ]
+     */
+  },
+  formSubmit(event){
+    console.log(event.detail.value)
+  },
+  inputHandler(event){
+    this.setData({
+      pick:event.detail.value,
+      pickd:event.detail.value,
+      picka:event.detail.value
+    })
+    console.log(event.detail.value)
+  },
+  /**
+  setScrollView(event){
+    this.setData({
+      currentView:event.target.dataset.view
+    })
+  },
+   */
+   /**
+      header:{
       content:'views',
       class:'header',
       show:true
@@ -15,7 +71,8 @@ Page({
       'banana',
       'lemon'
     ]
-  },
+    */
+
 
   /**
    * 生命周期函数--监听页面加载

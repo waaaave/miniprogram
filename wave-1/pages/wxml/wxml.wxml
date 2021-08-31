@@ -1,8 +1,176 @@
-<import src="../templates/header.wxml" />
+<!-- 第一个初始渲染 -->
+<!-- <import src="../templates/header.wxml" />
 <view class="container vertical centered" >
   <template is="header" data="{{ ...header }}"></template>
 
 </view>
 <view class="image">
    <image src="/assets/images/landscape.png"></image>
+</view> -->
+<!--视图容器与滚动视图  -->
+<!-- 
+<scroll-view scroll-y="{{true}}" scroll-into-view="{{currentView}}" scroll-with-animation="{{true}}">
+  <view class="view-container">
+    <view id="red" class="red" hover-class="light">
+      <text>1</text>
+    </view>
+    <view id="yellow" class="yellow" hover-class="light">
+      <text>2</text>
+    </view>
+    <view id="blue" class="blue" hover-class="light">
+      <text>3</text>
+    </view>
+  </view>
+</scroll-view>
+<button bindtap="setScrollView" data-view="red">red</button>
+<button bindtap="setScrollView" data-view="yellow">yellow</button>
+<button bindtap="setScrollView" data-view="blue">blue</button> -->
+
+<!-- 幻灯片 -->
+<!-- <swiper indicator-dots="{{true}}" 
+  indicator-color="rgba(255,255,255,0.3)"
+  indicator-active-color="#ffffff"
+  >
+
+  <block wx:for="{{images}}">
+    <swiper-item>
+    <image src="{{item}}" />
+  </swiper-item>
+  </block>
+</swiper> -->
+
+<!-- 移动视图 -->
+<!-- <movable-area>
+  <movable-view
+  direction="all"
+  inertia="{{true}}"
+  out-of-bounds="{{true}}"
+  x='30'
+  y='30'
+  >
+
+  </movable-view>
+</movable-area> -->
+
+<!-- 一些基础内容 -->
+<!-- <progress percent="30" activeColor="yellow"></progress>
+<view class="container vertical centered" >
+  <view>
+    <rich-text nodes="{{nodes}}"></rich-text>
+    
+    <icon type="success" size="12"></icon>
+    <icon type="info" size="24"></icon>
+    <icon type="search" size="36"></icon>
+    <icon type="cancel" size="48"></icon>
+  </view>
+</view> -->
+
+<!-- 滑动属性取值 -->
+<!-- <view class="container vertical centered" >
+
+<view>
+  <form bindsubmit="formSubmit">
+    <label for="slider">
+      <text>slider</text>
+    </label>
+    <slider id="slider" name="slider" show-value></slider>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+</view> -->
+<!-- input,textarea取值 -->
+
+<!-- <view class="container vertical centered" >
+<view>
+  <form bindsubmit="formSubmit">
+    <input type="text" name="text" placeholder="这是提示" />
+    <textarea name="textarea"
+      placeholder="textarea"  
+      bindinput="inputHandler"
+    ></textarea>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+</view> -->
+
+<!-- 单选多选 -->
+<!-- <view class="container vertical centered" >
+<view>
+  <form bindsubmit="formSubmit">
+    <checkbox-group name="checkbox" bindchange="inputHandler">
+      <label wx:for="{{items}}" wx:key="key">
+        <checkbox value="{{items.value}}" />
+        <text>{{item.name}}</text>
+      </label>
+    </checkbox-group>
+
+    <radio-group name="radio" bindchange="inputHandler">
+      <label wx:for="{{items}}" wx:key="key">
+        <radio value="{{items.value}}" />
+        <text>{{item.name}}</text>
+      </label>
+    </radio-group>
+
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+</view> -->
+
+<!-- 下拉选择器 -->
+<!-- <view class="container vertical centered" >
+<view>
+  <form bindsubmit="formSubmit">
+   <picker range="{{items}}"
+    bindchange="inputHandler"
+    name="picker"
+   >
+    <view>
+      <text>{{items[pick]}}</text>
+    </view>
+   </picker>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
+</view> -->
+
+<view class="container vertical centered" >
+<view>
+  <form bindsubmit="formSubmit">
+    <picker range="{{items}}"
+    value="{{picka}}"
+    bindchange="inputHandler"
+    name="pickerd"
+    mode="region"
+
+   >
+   <view>
+      <text>{{picka}}</text>
+    </view>
+
+    <!-- 日期选择器 -->
+    <!-- <picker range="{{items}}"
+    bindchange="inputHandler"
+    name="pickerd"
+    mode="date"
+    fields="month"
+   >
+   <view>
+      <text>{{pickd}}</text>
+    </view> -->
+    <!-- 时间选择器 -->
+   <!-- <picker range="{{items}}"
+    bindchange="inputHandler"
+    name="picker"
+    mode="time"
+    start="09:00"
+    end="17:00"
+   >
+   <view>
+    <text>{{pick}}</text>
+   </view> -->
+  
+   </picker>
+    <button form-type="submit">提交</button>
+  </form>
+</view>
 </view>

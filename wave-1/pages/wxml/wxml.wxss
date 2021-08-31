@@ -1,1 +1,60 @@
 /* pages/wxml/wxml.wxss */
+movable-area{
+  width: 100vw;
+ height: 50vh;
+ background: #ededed;
+}
+movable-view{
+  width: 80px;
+  height: 80px;
+  background: #6435c9;
+}
+.red{
+  background: red;
+}
+.yellow{
+  background: yellow;
+}
+.blue{
+  background: blue;
+}
+.view-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+.light{
+  opacity: 0.5;
+}
+.view-container view{
+  width: 100%;
+  height: 100%;
+}
+.view-container text{
+  color: #ffffff;
+  padding: 16px;
+  display: block;
+  font-size:32px;
+}
+scroll-view{
+  height: 180px;
+}
+button{
+  padding: 8px;
+}
+image, .image{
+  width: 100%;
+  height: 100%;
+}
+form{
+  width: 100vw;
+}
+input,textarea,picker,pickerd{
+  width: 100%;
+  padding: 8px;
+  background: #ffffff;
+  margin: 8px;
+  bottom: 1px solid #dddddd;
+  border-radius: 4px;
+}

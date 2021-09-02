@@ -1,0 +1,45 @@
+
+<map
+
+ longitude="27.225010"
+  latitude="33.375462"
+  scale="15" 
+  markers="{{markers}}"
+   />
+
+<!-- open-type="switchTab"  //直接切换页面 -->
+<!-- open-type="navigate"   //打开新页面，可返回   -->
+<!-- <view class="container vertical centered" >
+
+   <navigator
+
+   open-type="redirect"
+   url="/pages/demo/demo?id=1000"
+   >
+     demo
+   </navigator>
+</view> -->
+<!-- 
+<view class="container vertical centered">
+  <view>
+
+     <video poster="https://resources.ninghao.net/deng-deng-deng.jpg"
+      src="https://resources.ninghao.net/deng-deng-deng.mp4" controls bindplay="play" bindpause="pause"
+      object-fit="cover"
+      bindended="ended" />
+
+ <audio poster="/assets/images/builds.jpg" 
+      src="https://resources.ninghao.net/deng-deng-deng.mp3"
+      author="kk"
+      name="deng-deng-deng"
+      controls
+      bindplay="play"
+      bindpause="pause"
+      bindended="ended"
+    /> 
+  </view>
+</view> -->
+
+<!-- <view class="image">
+  <image src="/assets/images/landscape.png"></image>
+</view> -->

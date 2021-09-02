@@ -1,0 +1,33 @@
+Page({
+  data:{
+    markers:[{
+      id:0,
+      longitude:37.563936,
+      latitude:-116.85123,
+      iconpath:'/assets/icons/io.png',
+      width:22,
+      height:40,
+      callout:{
+        content:'这里',
+        fontSize:14,
+        color:'#000',
+        padding:8,
+        bgColor:'#fff',
+        borderRadius:4,
+        boxShadwo:'4px 8px 16px 0 rgba(0,0,0,0.18)'
+      },
+    }]
+  },
+  play(event){
+    console.log(event)
+  },
+  pause(event){
+    console.log(event)
+  },
+  ended(event){
+    console.log(event)
+  },
+  onLoad: function (options) {
+    console.log(options)
+  }
+})

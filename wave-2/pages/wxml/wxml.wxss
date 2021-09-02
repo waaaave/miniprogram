@@ -1,0 +1,9 @@
+/* pages/wxml/wxml.wxss */
+.header{
+  text-align: center;
+}
+map{
+  width: 100vw;
+  height: 50vh;
+  
+}
